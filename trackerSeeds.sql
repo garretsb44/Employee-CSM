@@ -27,8 +27,8 @@ CREATE TABLE employee (
 INSERT INTO department (name)
 VALUES ("Sales"),("Legal"),("Engineering"),("Marketing");
 
-INSERT INTO products (flavor, price, quantity)
-VALUES ("chocolate", 3.10, 120);
+INSERT INTO role (title, salary, department_id)
+VALUES ("Salesmen", 50000, 1),("Typer",30000,2),("Engineer", 70000, 3),("Agent",45000, 4);
 
-INSERT INTO products (flavor, price, quantity)
-VALUES ("strawberry", 3.25, 75);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ("Tim","Stevens", 1, null),("Stacy","Adams", 2, null),("Mike","Jones", 3, null),("Jessica", "Johnson", 4, null);
